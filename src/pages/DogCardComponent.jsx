@@ -31,7 +31,7 @@ function DogCardComponent({dog, onMoreInfo}) {
                             onLoad={handleLoad}
                         />
                         {!isRealImage && (
-                            <div id="missing-img">
+                            <div className="missing-img">
                                 <p>Photo of {dog.name} will be here soon!</p>
                             </div>
                         )}
