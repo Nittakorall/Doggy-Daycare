@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router"
+import './Dogs.css'
+
+
+
 function Dogs() {
     const XMasterKey = import.meta.env.VITE_JSONBIN_KEY;
 //const XMasterKey = "$2a$10$3EFI2pdzfX7xpZkYBCjOrewUUWdup6WeJS.YpPKB4RBpouvjO90pS"
@@ -42,12 +46,16 @@ function NavigateToDogInfo(dog) {
        <ul>
         {dogsList.map(dog => (
             //check that each dog has a unique id
+            <section className="dog-card">
+            
             <li key ={dog.id}>
+                <img src={dog.img} alt={`Photo of ${dog.name} coming soon`} className="dog-image"/>
                 <h2>{dog.name}</h2>
                 <p>Age: {dog.age}</p>
                 <p>Breed: {dog.breed}</p>
             <button onClick={() => NavigateToDogInfo(dog)}>More info</button>
             </li>
+            </section>
         ))}
        </ul>       
    </>
