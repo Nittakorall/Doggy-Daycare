@@ -22,7 +22,7 @@ function Start() {
                         <p>Our experienced staff will ensure that your dog gets plenty of exercise and socialization.</p>
                     </section>
                     <section id="buttons">
-                        <button onClick={() => navigate('/contact')}>Leave a dog</button>
+                    
                         <button onClick={() => navigate('/dogs')}>Our dogs</button>
                     </section>
                 </section>

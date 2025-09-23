@@ -48,7 +48,7 @@ function DogInfo() {
           <section id="dog-info">
             <h2>Hello from {dog.breed} {dog.name}!</h2>
 
-            <p> {dog.name} is a {dog.age} years old {dog.sex} dog. {dog.name} {dog.present ? " is here at Doggy rigt now and is totally amazing!" : " is not at Doggy right now. But we would be happy to see her again!"}
+            <p> {dog.name} is a {dog.age} years old {dog.sex} dog. {dog.name} {dog.present ? " is here at Doggy right now and is totally amazing!" : " is not at Doggy right now. But we would be happy to see her again!"}
               {!isRealImage ? ` But ${dog.name} is shy so we had to hide real photo` : ""}</p>
           </section>
 
