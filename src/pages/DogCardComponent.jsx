@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router"
 import './Dogs.css'
+import noDogImage from '../assets/noDog.jpg'
+
 
 function DogCardComponent({dog, onMoreInfo}) {
     const [isRealImage, setIsRealImage] = useState(true)
@@ -32,7 +34,8 @@ function DogCardComponent({dog, onMoreInfo}) {
                         />
                         {!isRealImage && (
                             <div className="missing-img">
-                                <p>Photo of {dog.name} will be here soon!</p>
+                            <img src={noDogImage} alt="Happy Dog" id='image'/> 
+                                <p>Real photo of {dog.name} will be here soon!</p>
                             </div>
                         )}
                     </div>
