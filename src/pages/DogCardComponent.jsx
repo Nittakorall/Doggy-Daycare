@@ -4,7 +4,7 @@ import './Dogs.css'
 import noDogImage from '../assets/noDog.jpg'
 
 
-function DogCardComponent({dog, onMoreInfo}) {
+function DogCardComponent({ dog, onMoreInfo }) {
     const [isRealImage, setIsRealImage] = useState(true)
 
 
@@ -16,40 +16,40 @@ function DogCardComponent({dog, onMoreInfo}) {
 
 
     return (
-        
-            <section className="dog-card">
 
-                <li key={dog.id}>
+        <section className="dog-card">
 
-                    <div
-                        className="dog-background"
-                        style={isRealImage ? { backgroundImage: `url(${dog.img})` } : {}}
-                    >
-                        <img
-                            src={dog.img}
-                            alt=""
-                            style={{ display: "none" }}
-                            onError={() => setIsRealImage(false)}
-                            onLoad={handleLoad}
-                        />
-                        {!isRealImage && (
-                            <div className="missing-img">
-                            <img src={noDogImage} alt="Happy Dog" id='image'/> 
-                                <p>Real photo of {dog.name} will be here soon!</p>
-                            </div>
-                        )}
-                    </div>
+            <li key={dog.id}>
 
+                <div
+                    className="dog-background"
+                    style={isRealImage ? { backgroundImage: `url(${dog.img})` } : {}}
+                >
+                    <img
+                        src={dog.img}
+                        alt=""
+                        style={{ display: "none" }}
+                        onError={() => setIsRealImage(false)}
+                        onLoad={handleLoad}
+                    />
+                    {!isRealImage && (
+                        <div className="missing-img">
+                            <img src={noDogImage} alt="Happy Dog" id='image' />
+                            <p className="fake-photo">Real photo of {dog.name} will be here soon!</p>
+                        </div>
+                    )}
+                </div>
+                <h2>{dog.name}</h2>
+                <h3 className={dog.present ? "present" : "absent"}>{dog.present ? "At Doggy" : "Not at Doggy"}</h3>
 
-                    <h2>{dog.name}</h2>
-                    <p>Age: {dog.age}</p>
-                    <p>Breed: {dog.breed}</p>
-                    <div id="more-info-button">
-                        <button onClick={() => onMoreInfo(dog)}>More info</button>
-                    </div>
-                </li>
-            </section>
-        
+                <p>Age: {dog.age}</p>
+                <p>Breed: {dog.breed}</p>
+                <div id="more-info-button">
+                    <button onClick={() => onMoreInfo(dog)}>More info</button>
+                </div>
+            </li>
+        </section>
+
     )
 
 }

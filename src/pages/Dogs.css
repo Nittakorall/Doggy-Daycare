@@ -1,5 +1,5 @@
 .dog-card {
-    background-color: #274a28;
+    background-color: #523425;
     padding: 0px;
     display: flex;
     flex-direction: column;
@@ -38,17 +38,33 @@ ul {
     margin-bottom: 10px;
 }
 
-h2,
+h3 ,h2,
 p {
     text-align: center;
+
+}
+
+h3 {
+    font-style: italic;
+
+}
+.present {
+    color:#46d44b
+}
+.absent {
+color:#ca4444
+}
+
+.fake-photo {
+ margin-top: 5px;
 }
 
 #more-info-button {
 
     display: flex;
     justify-content: center;
-
-
+padding-bottom: 10px;
+margin-top: auto;
 }
 
 

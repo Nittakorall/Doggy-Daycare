@@ -50,7 +50,10 @@ function Dogs() {
         <>
             <h1>Our Dogs</h1>
             <ul>
-                {dogsList.map(dog => (
+                {dogsList
+                .slice()
+                .sort((a,b) => b.present - a.present) 
+                .map(dog => (
                     <DogCardComponent key={dog.id} dog={dog} onMoreInfo={NavigateToDogInfo}></DogCardComponent>
                    ))}
 
