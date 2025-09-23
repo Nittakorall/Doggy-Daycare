@@ -2,6 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router'
 import './Start.css'
 import dogImage from '../assets/dog2.jpg'
+import { useLocation } from "react-router"
 
 function Start() {
     const navigate = useNavigate();
