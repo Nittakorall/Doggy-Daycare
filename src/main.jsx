@@ -9,16 +9,16 @@ import Contact from './pages/Contact.jsx'
 
 
 const router = createHashRouter([
-  {path: '/', Component: Start },
-  {path: '/dogs', Component: Dogs},
-  {path: '/dog_info', Component: DogInfo},
-  {path: 'contact', Component: Contact}
+  { path: '/', Component: Start },
+  { path: '/dogs', Component: Dogs },
+  { path: '/dog_info', Component: DogInfo },
+  { path: 'contact', Component: Contact }
 ])
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </StrictMode>,
 )

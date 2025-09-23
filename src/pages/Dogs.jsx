@@ -49,16 +49,17 @@ function Dogs() {
     return (
         <>
             <h1>Our Dogs</h1>
+             <button id="to-start" onClick={() => navigate('/')}>Back to start</button>
             <ul>
                 {dogsList
-                .slice()
-                .sort((a,b) => b.present - a.present) 
-                .map(dog => (
-                    <DogCardComponent key={dog.id} dog={dog} onMoreInfo={NavigateToDogInfo}></DogCardComponent>
-                   ))}
+                    .slice()
+                    .sort((a, b) => b.present - a.present)
+                    .map(dog => (
+                        <DogCardComponent key={dog.id} dog={dog} onMoreInfo={NavigateToDogInfo}></DogCardComponent>
+                    ))}
 
 
-                            {/* Ask David
+                {/* Ask David
                             <div className="dog-background"
                                 style={
                                     dog.img ? {
@@ -77,7 +78,7 @@ function Dogs() {
                             */}
 
 
-             
+
             </ul>
         </>
     )

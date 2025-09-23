@@ -38,7 +38,8 @@ ul {
     margin-bottom: 10px;
 }
 
-h3 ,h2,
+h3,
+h2,
 p {
     text-align: center;
 
@@ -48,35 +49,38 @@ h3 {
     font-style: italic;
 
 }
+
 .present {
-    color:#46d44b
+    color: #46d44b
 }
+
 .absent {
-color:#ca4444
+    color: #ca4444
 }
 
 .fake-photo {
- margin-top: 5px;
+    margin-top: 5px;
 }
 
 #more-info-button {
 
     display: flex;
     justify-content: center;
-padding-bottom: 10px;
-margin-top: auto;
+    padding-bottom: 10px;
+    margin-top: auto;
 }
 
 
 
 #loading {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 10px 30px;
     background-color: antiquewhite;
-    color: #274a28;
-    margin: auto;
+    color: #000000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 }
@@ -88,10 +92,14 @@ margin-top: auto;
     align-items: stretch;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-   
+
     flex: 50%;
     max-width: 300px;
     transition: transform 0.3s, box-shadow 0.3s;
     overflow: hidden;
     height: 450px;
+}
+#to-start {
+display: block;
+margin: 20px auto;
 }
