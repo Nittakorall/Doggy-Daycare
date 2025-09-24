@@ -8,6 +8,16 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: animation 1s ease-out forwards;
+}
+
+@keyframes animation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
 }
 
@@ -26,8 +36,7 @@ h1 {
     flex: 1;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
+    box-shadow: 0 4px 8px #00000033;
     background-color: #523425;
 
 }
@@ -47,11 +56,16 @@ h1 {
     color: #f4ecdc;
     display: flex;
     flex-direction: column;
- 
+
     justify-content: stretch;
 
 
 
+}
+
+
+#what-we-offer p {
+    line-height: 1.5;
 }
 
 #image-section {

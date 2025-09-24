@@ -11,7 +11,7 @@ function Start() {
         <>
             {/* Jag vet att man ska undvika div, men det ser inte ut som section */}
             <div id="start">
-                <h1>Welcome to the Dog Daycare</h1>
+                <h1>Welcome to the Doggy Daycare</h1>
             </div>
             <div id="main">
                 <section id="about-us">
@@ -22,12 +22,11 @@ function Start() {
                         <p>Our experienced staff will ensure that your dog gets plenty of exercise and socialization.</p>
                     </section>
                     <section id="buttons">
-                    
+
                         <button onClick={() => navigate('/dogs')}>Our dogs</button>
                     </section>
                 </section>
                 <section id='image-section'>
-                    {/*        <img src={dogImage} alt="Happy Dog" id='image'/> */}
                 </section>
 
 
