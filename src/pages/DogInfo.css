@@ -12,7 +12,7 @@ h1 {
   height: auto;
   display: block;
   margin: 0 auto;
-
+  align-items: flex-end;
 }
 
 
@@ -71,7 +71,8 @@ h1 {
 
 #photo {
   position: relative;
-  z-index: 1;
+  z-index: 1; 
+
 }
 
 #dog-info p,
@@ -93,4 +94,15 @@ h1 {
   background-position: center;
   border-radius: 20px;
   margin: 0 auto;
+     opacity: 0;
+  transform: translateY(-30px);
+  animation: animationInfo 1s ease-out forwards;
+}
+
+@keyframes animationInfo {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 }
