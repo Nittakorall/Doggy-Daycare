@@ -1,6 +1,6 @@
 import { useLocation } from "react-router"
 import './DogInfo.css'
-import { useState, useEffect } from "react"
+import { useState} from "react"
 import noDogImage from '../assets/noDog.jpg'
 import { useNavigate } from 'react-router'
 

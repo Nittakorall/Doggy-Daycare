@@ -1,15 +1,13 @@
 import React from 'react'
 import { useNavigate } from 'react-router'
 import './Start.css'
-import dogImage from '../assets/dog2.jpg'
-import { useLocation } from "react-router"
+
 
 function Start() {
     const navigate = useNavigate();
 
     return (
         <>
-            {/* Jag vet att man ska undvika div, men det ser inte ut som section */}
             <div id="start">
                 <h1>Welcome to the Doggy Daycare</h1>
             </div>

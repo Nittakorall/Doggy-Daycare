@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react"
-import { useNavigate } from "react-router"
+import { useState } from "react"
 import './Dogs.css'
 import noDogImage from '../assets/noDog.jpg'
 

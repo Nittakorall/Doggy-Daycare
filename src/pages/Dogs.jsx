@@ -7,7 +7,6 @@ import DogCardComponent from "./DogCardComponent.jsx";
 
 function Dogs() {
     const XMasterKey = import.meta.env.VITE_JSONBIN_KEY;
-    //const XMasterKey = "$2a$10$3EFI2pdzfX7xpZkYBCjOrewUUWdup6WeJS.YpPKB4RBpouvjO90pS"
     const [dogsList, setDogsList] = useState([])
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
@@ -58,24 +57,7 @@ function Dogs() {
                         <DogCardComponent key={dog.id} dog={dog} onMoreInfo={NavigateToDogInfo}></DogCardComponent>
                     ))}
 
-
-                {/* Ask David
-                            <div className="dog-background"
-                                style={
-                                    dog.img ? {
-                                        backgroundImage: `url(${dog.img})`
-                                    }
-                                        : {}
-                                }
-                            >{!dog.img && (
-                                <div id="missing-img">
-                                    <p>Photo of {dog.name} will be here soon!</p>
-                                </div>
-                            )}
-
-
-                            </div>
-                            */}
+                
 
 
 
